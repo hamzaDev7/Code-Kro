@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Task</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1> HTML Assignment</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#form">Form</a> |
+        <a href="#attributes">Attributes</a> |
+        <a href="#divspan">Div & Span</a> |
+        <a href="#semantic">Semantic HTML</a> |
+        <a href="#media">Multimedia</a> |
+        <a href="#images">Responsive Images</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <!-- Forms -->
+        <section id="form">
+            <h2>HTML Forms</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Student Registration Form</legend>
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="fullname" placeholder="Enter Name" required
+                        minlength="3"><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+
+                    <label>Password:</label><br>
+                    <input type="password" required minlength="6"><br><br>
+
+                    <label>Age:</label><br>
+                    <input type="number" min="18" max="50" required><br><br>
+
+                    <label>Phone:</label><br>
+                    <input type="tel" pattern="[0-9]{11}" placeholder="03XXXXXXXXX"><br><br>
+
+                    <label>Date of Birth:</label><br>
+                    <input type="date"><br><br>
+
+                    <label>Website:</label><br>
+                    <input type="url"><br><br>
+
+                    <label>Favorite Color:</label><br>
+                    <input type="color"><br><br>
+
+                    <label>Upload File:</label><br>
+                    <input type="file"><br><br>
+
+                    <label>Gender:</label><br>
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                    <br><br>
+
+                    <label>Skills:</label><br>
+                    <input type="checkbox"> HTML
+                    <input type="checkbox"> CSS
+                    <input type="checkbox"> JavaScript
+                    <br><br>
+
+                    <label>City:</label><br>
+                    <select>
+                        <option>Lahore</option>
+                        <option>Gujrat</option>
+                        <option>Islamabad</option>
+                        <option>Karachi</option>
+                    </select>
+
+                    <br><br>
+
+                    <label>Message:</label><br>
+                    <textarea rows="5" cols="40" placeholder="Write your message"></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- HTML Attributes -->
+        <section id="attributes">
+
+            <h2>HTML Attributes</h2>
+
+            <p id="para1" class="text" style="color:blue;" title="HTML Attributes Example" lang="en" dir="ltr"
+                draggable="true" spellcheck="true">
+                This paragraph demonstrates HTML attributes.
+            </p>
+
+            <input type="text" name="username" value="Hamza Zahoor">
+
+            <p hidden>This text is hidden.</p>
+
+        </section>
+
+        <hr>
+
+        <!-- Div and Span -->
+        <section id="divspan">
+
+            <h2>Div and Span</h2>
+
+            <div>
+                This is a DIV element (Block Container).
+            </div>
+
+            <br>
+
+            <p>
+                This is a paragraph with a
+                <span style="color:red;">SPAN element</span>
+                (Inline Container).
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Block vs Inline -->
+        <section>
+
+            <h2>Block vs Inline Elements</h2>
+
+            <div>DIV is a Block Element</div>
+
+            <p>Paragraph is also a Block Element.</p>
+
+            <span>SPAN is Inline.</span>
+
+            <strong>Strong is Inline.</strong>
+
+            <em>Em is Inline.</em>
+
+        </section>
+
+        <hr>
+
+        <!-- Semantic HTML -->
+        <section id="semantic">
+
+            <article>
+
+                <h2>Article</h2>
+
+                <p>
+                    This is an example of the ARTICLE element.
+                </p>
+
+            </article>
+
+            <aside>
+
+                <h3>Aside</h3>
+
+                <p>
+                    Additional information goes here.
+                </p>
+
+            </aside>
+
+            <figure>
+
+                <img src="image.jpg" alt="Sample Image" width="300">
+
+                <figcaption>
+                    Figure Caption Example
+                </figcaption>
+
+            </figure>
+
+            <details>
+
+                <summary>Click to Read More</summary>
+
+                <p>
+                    Details element provides extra information.
+                </p>
+
+            </details>
+
+            <address>
+
+                Hamza Zahoor<br>
+                Gujrat, Pakistan<br>
+                hamza@example.com
+
+            </address>
+
+            <p>
+
+                Current Date:
+
+                <time datetime="2026-07-03">
+                    July 3, 2026
+                </time>
+
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Multimedia -->
+        <section id="media">
+
+            <h2>Audio</h2>
+
+            <audio controls autoplay loop muted>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <br><br>
+
+            <h2>Video</h2>
+
+            <video width="400" controls autoplay loop muted poster="poster.jpg">
+
+                <source src="video.mp4" type="video/mp4">
+
+                <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+
+                Your browser does not support video.
+
+            </video>
+
+        </section>
+
+        <hr>
+
+        <!-- Responsive Images -->
+        <section id="images">
+
+            <h2>Responsive Images</h2>
+
+            <picture>
+
+                <source media="(min-width:900px)" srcset="large.jpg">
+
+                <source media="(min-width:600px)" srcset="medium.jpg">
+
+                <img src="small.jpg" alt="Responsive Image" width="400">
+
+            </picture>
+
+            <br><br>
+
+            <img src="small.jpg" srcset="
+                    small.jpg 400w,
+                    medium.jpg 800w,
+                    large.jpg 1200w" sizes="
+                    (max-width:600px) 400px,
+                    (max-width:900px) 800px,
+                    1200px" alt="Responsive Image">
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            Created by Hamza Zahoor. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
